@@ -2,13 +2,12 @@
 // where your node app starts
 
 // init project
-var express = require('express');
-var app = express();
-
-app.get('/',  (req, res) => {
-  console.log('Accessing the secret section ...');
+const os = require('os');
+const express = require('express');
+const app = express();
+app.all("", (req, res)=>{
+  res.write("Hello, world!");
 });
-// listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
