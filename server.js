@@ -2,16 +2,16 @@
 // where your node app starts
 
 // init project
-const bodyParser = require('body-parser');
+const os = require('useragent');
 const express = require('express');
 const app = express();
 app.all("", (req, res)=>{
   let ip = req.ip;
   let platform=os.platform; 
-  let lang=os.;
+  let lang;
   res.set("content-type", "application/json");
   let data = JSON.stringify({"ip":ip, "language": lang, os:platform});
-  res.send(data)
+  res.send(req.headers)
   res.end();
 });
 var listener = app.listen(process.env.PORT, function () {
