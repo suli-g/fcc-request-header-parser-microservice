@@ -1,28 +1,31 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "my-glitch-app",
-  "version": "0.0.1",
-  "description": "What am I about?",
+  "name": "fcc-request-header-parser",
+  "version": "1.0.0",
+  "description": "An API that returns the users ip addres, language and Operating system",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
   "dependencies": {
-    "express": "^4.15.3",
     "useragent": "^2.1.13"
   },
-  "engines": {
-    "node": "8.1.x"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/welcome-project"
+    "type": "git",
+    "url": "git+https://github.com/suli-g/fcc-request-header-parser-microservice.git"
   },
-  "license": "MIT",
   "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+    "header",
+    "parser",
+    "microservice",
+    "fcc",
+    "freecodecamp"
+  ],
+  "author": "Sulaiman Gafoor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suli-g/fcc-request-header-parser-microservice/issues"
+  },
+  "homepage": "https://github.com/suli-g/fcc-request-header-parser-microservice#readme"
 }

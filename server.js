@@ -1,8 +1,8 @@
 // set up app to use expressjs
 const express = require('express');
 const app = express();
-//respond
-app.all("", (req, res)=>{
+//respond to all
+app.use("*", (req, res)=>{
   let head = req.headers;
   let ip = head["x-forwarded-for"].split(",")[0];
   let os_ = head["user-agent"];
